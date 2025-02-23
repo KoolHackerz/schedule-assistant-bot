@@ -1,5 +1,0 @@
-pyTelegramBotAPI
-loguru
-schedule
-requests
-python-dotenv

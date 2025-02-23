@@ -1,16 +1,15 @@
 from loguru import logger
 import requests
-import settings
+import config
 
-logger.add('logging.log', format='{time:YYYY-MM-DD HH:mm:ss} - {level} - {message}', level='DEBUG', rotation='10 MB', compression='zip')
 
-quotes_api_url = "https://api.quotable.io"
+quotes_api_url = "http://api.quotable.io"
 translation_api_url = "https://api.mymemory.translated.net"
 
 def get_random_quote(tag: str, lang: str) -> str | None:
     '''Функция для получения случайной цитаты по tag'у и на языкe lang'''
 
-    if (tag not in settings.quote_tags):
+    if (tag not in config.quote_tags):
         logger.warning(f"Tag list doesn't contain {tag}")
         return
     
