@@ -3,38 +3,38 @@
         {
             "week_parity": false,
             "time": "8:00-9:35",
-            "name": "Психологія - Лекція",
+            "name": "Психология - Лекция",
             "links": [
                 "https://meet.google.com/gcv-yxmw-hwe"
             ],
-            "teachers": "Волошенко М.О."
+            "teachers": "Волошенко М.А."
         },
         {
             "week_parity": true,
             "group": 1,
             "time": "8:00-9:35",
-            "name": "Психологія - Практика для групи ВД01-14",
+            "name": "Психология - Практика для группы ВД01-14",
             "links": [
                 "https://meet.google.com/wvn-smak-kvi"
             ],
-            "teachers": "Волошенко М.О."
+            "teachers": "Волошенко М.А."
         },
         {
             "time": "9:50-11:25",
-            "name": "Комп'ютерні мережі - Лекція",
+            "name": "Компьютерные сети - Лекция",
             "links": [
                 "https://us04web.zoom.us/j/9259707912?pwd=rDktkUw9qYd6nSRfiEN2Ws7VFKbVrl.1"
             ],
-            "teachers": "Кузнєцов М.О."
+            "teachers": "Кузнецов Н.А."
         },
         {
             "week_parity": true,
             "time": "11:40-13:15",
-            "name": "Технології створення ПП - Лаб",
+            "name": "Технологии создания ПП - Лаб",
             "links": [
                 "https://us02web.zoom.us/j/87647753497?pwd=eTJzOGo5bGZnNC9NMGRBVFNKRVlQUT09"
             ],
-            "teachers": "Блажко О.А. та Дрозд М.О."
+            "teachers": "Блажко А.А. и Дрозд М.А."
         }
     ],
     "tuesday": [
@@ -42,15 +42,15 @@
             "week_parity": true,
             "group": 2,
             "time": "8:00-9:35",
-            "name": "Психологія - Практика для групи ВД01-15",
+            "name": "Психология - Практика для группы ВД01-15",
             "links": [
                 "https://meet.google.com/zhx-gebj-tpx"
             ],
-            "teachers": "Волошенко М.О."
+            "teachers": "Волошенко М.А."
         },
         {
             "time": "9:50-11:25",
-            "name": "Інтелектуальний аналіз даних - Лекція",
+            "name": "Интеллектуальный анализ данных - Лекция",
             "links": [
                 "https://teams.microsoft.com/l/team/19%3ASLGsU54KbqRzxjnxzf8KLm1GaBnMIoxOkrYl5q1Zews1%40thread.tacv2/conversations?groupId=bc2625ec-c4de-4c9b-bc6d-620b5f1ee674&tenantId=bd2fa240-71fc-45bd-abce-f1bc80beeb0a"
             ],
@@ -59,18 +59,18 @@
         {
             "week_parity": true,
             "time": "11:40-13:15",
-            "name": "Обчислювальні методи - Лаб",
+            "name": "Численные методы - Лаб",
             "links": [
                 "https://teams.microsoft.com/l/meetup-join/19%3ayp3vNP3BqAVPkuW2Y8YqKOKXF0QQlydP0_Y1XiVUDqY1%40thread.tacv2/1724955558997?context=%7b%22Tid%22%3a%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2c%22Oid%22%3a%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7d"
             ],
-            "teachers": "Шпиньковський О.А. та Дрозд Ю.В."
+            "teachers": "Шпинковський А.А. и Дрозд Ю.В."
         },
         {
             "week_parity": true,
             "time": "13:30-15:05",
-            "name": "Забезпечення якості та контроль якості і тестування ПП - Лаб",
+            "name": "Обеспечение качества и контроль качества и тестирование ПП - Лаб",
             "links": [],
-            "teachers": "Бабич М.І. та Баськов І.О."
+            "teachers": "Бабич Н.И. и Баськов И.А."
         }
     ],
     "wednesday": [
@@ -80,54 +80,50 @@
             "links": [
                 "https://meet.google.com/whs-kgcz-wqj"
             ],
-            "teachers": "Кошутіна Д.В. та Смик С.Ю."
+            "teachers": "Кошутина Д.В. и Смык С.Ю."
         },
         {
             "time": "11:40-13:15",
-            "name": "Обчислювальні методи - Лекція",
+            "name": "Численные методы - Лекция",
             "links": [
                 "https://teams.microsoft.com/l/meetup-join/19%3ayp3vNP3BqAVPkuW2Y8YqKOKXF0QQlydP0_Y1XiVUDqY1%40thread.tacv2/1724955558997?context=%7b%22Tid%22%3a%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2c%22Oid%22%3a%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7d"
             ],
-            "teachers": "Шпиньковський О.А."
+            "teachers": "Шпинковський А.А."
         }
     ],
     "thursday": [
         {
             "time": "9:50-11:25",
-            "name": "Забезпечення якості та контроль якості і тестування ПП - Лекція",
+            "name": "Обеспечение качества и контроль качества и тестирование ПП - Лекция",
             "links": [
                 "https://us02web.zoom.us/j/87647753497?pwd=eTJzOGo5bGZnNC9NMGRBVFNKRVlQUT09"
             ],
-            "teachers": "Баськов І.О."
+            "teachers": "Баськов И.А."
         }
     ],
     "friday": [
         {
             "time": "8:00-9:35",
-            "name": "Комп'ютерні мережі - Лаб",
+            "name": "Компьютерные сети - Лаб",
             "links": [],
-            "teachers": "Кузнєцов М.О."
+            "teachers": "Кузнецов Н.А."
         },
         {
             "time": "9:50-11:25",
-            "name": "Технології створення ПП - Лекція",
+            "name": "Технологии создания ПП - Лекция",
             "links": [
                 "https://us02web.zoom.us/j/87647753497?pwd=eTJzOGo5bGZnNC9NMGRBVFNKRVlQUT09",
                 "Пароль: 306089"
             ],
-            "teachers": "Блажко О.А."
+            "teachers": "Блажко А.А."
         },
         {
             "time": "11:40-13:15",
-            "name": "Веб-технології та Веб-дизайн - Лекція",
+            "name": "Веб-технологии и Веб-дизайн - Лекция",
             "links": [],
             "teachers": "Червоненко П.П."
         }
     ],
-    "saturday": [
-        {
-            "schedule-day": 0
-        }
-    ],
+    "saturday": [],
     "sunday": []
 }

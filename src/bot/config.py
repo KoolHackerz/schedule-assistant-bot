@@ -1,26 +1,48 @@
-FIRST_WEEK_NUMBER = 36  # todo перед запуском бота заменить на 10!!!!
+import json
+import os
+from dotenv import load_dotenv
+from threading import Lock
+from loguru import logger
 
-# weekday_name_ru_dict = {
-#     "monday": "Понедельник",
-#     "tuesday": "Вторник",
-#     "wednesday": "Среду",
-#     "thursday": "Четверг",
-#     "friday": "Пятницу",
-#     "saturday": "Субботу",
-#     "sunday": "Воскресенье"
-# }
 
-# weekday_name_uk_dict = {
-#     "monday": "Понеділок",
-#     "tuesday": "Вівторок",
-#     "wednesday": "Середу",
-#     "thursday": "Четвер",
-#     "friday": "П'ятницю",
-#     "saturday": "Суботу",
-#     "sunday": "Неділя"
-# }
+class Config:
+    _instance = None
+    _lock = Lock()
 
-weekday_name_dict = {
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            with cls._lock:
+                if not cls._instance:
+                    cls._instance = super(Config, cls).__new__(cls, *args, **kwargs)
+                    cls._instance._initialized = False
+        return cls._instance
+
+    def __init__(self):
+        if self._initialized:
+            return
+        
+        logger.add('../../logs/logging.log', format='{time:YYYY-MM-DD HH:mm:ss} - {level} - {message}',
+                level='DEBUG', rotation='10 MB', compression='zip')
+        
+        load_dotenv()
+        self.TOKEN = os.getenv('TOKEN')
+        self.ADMINS = [int(admin) for admin in os.getenv('ADMINS').split(',')]
+        
+        with open('../data/localization.json', 'r', encoding='utf-8') as file:
+            BUTTON_TEXTS = json.load(file)
+        self.BUTTON_TEXTS = BUTTON_TEXTS
+        
+        self.FIRST_WEEK_NUMBER = 36
+        self.saturday_lessons = False
+        self._initialized = True
+
+    @classmethod
+    def get_instance(cls):
+        if not cls._instance:
+            cls._instance = cls()
+        return cls._instance
+
+localized_weekday_names = {
     "rus": {
         "monday": "Понедельник",
         "tuesday": "Вторник",
