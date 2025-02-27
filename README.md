@@ -1,95 +1,105 @@
-# Telegram Schedule and Quote Bot
+# Schedule Assistant Bot
 
-## Overview
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-blue.svg" alt="Python 3.12">
+  <img src="https://img.shields.io/badge/Platform-Telegram-blue.svg" alt="Platform: Telegram">
+</div>
 
-This project is a Telegram bot that automatically sends schedules and quotes to users. It supports multiple languages (Russian and Ukrainian) and allows users to subscribe to daily schedule notifications, find stickers, change their group, and subscribe to thematic quotes. The bot also includes admin features for sending messages to all users and uses a simple SQLite database for storing user subscriptions and settings.
+## 🤖 About The Bot
 
-## Features
+Schedule Assistant Bot is a versatile Telegram bot designed specifically for university students to keep track of their class schedules and receive daily inspirational quotes. Created by students from Odessa Polytechnic University, this bot simplifies schedule management and adds a touch of motivation to students' daily routines.
 
-- **Daily Schedule Notifications:** Users receive daily schedule messages based on their group and chosen language.
-- **Quote Subscription:** Users can subscribe to receive daily quotes based on their preferences.
-- **Language Support:** The bot supports both Russian and Ukrainian languages, which can be selected by users.
-- **Sticker Search:** Users can search for stickers based on keywords.
-- **Admin Functionality:** Admins can send messages to all users and manage the bot's operation.
-- **Group and Settings Management:** Users can change their group, language, and quote preferences via a simple menu.
-- **Automatic Retry Logic:** The bot will automatically retry if there are connection issues.
+## ✨ Key Features
 
-## Requirements
+- **📅 Interactive Schedule Access**: Instant access to today's or tomorrow's class schedule
+- **🌍 Multi-language Support**: Full functionality in both Russian and Ukrainian languages
+- **🔔 Automated Notifications**: Daily schedule reminders at customizable times
+- **💬 Daily Inspirational Quotes**: Thematic quotes to start the day with motivation
+- **🔍 Sticker Search**: Find and share stickers with simple keyword searches
+- **⚙️ User Preferences**: Customizable groups, languages, and quote themes
+- **👑 Admin Features**: Send broadcast messages to all subscribed users
+
+## 📋 Detailed Features
+
+### For Students
+- View complete daily class schedules with teacher information and classroom links
+- Subscribe to automated schedule notifications
+- Receive curated daily quotes based on chosen themes (motivation, success, etc.)
+- Search and send stickers directly through the bot
+- Customize language preferences and group assignments
+
+### For Admins
+- Send important announcements to all subscribed users through a dedicated admin interface
+
+## 🛠️ Technical Requirements
 
 - Python 3.12
-- Poetry
+- Poetry for dependency management
+- SQLite database (included)
 
-To install all required dependencies, run:
+## 📦 Installation
 
-```bash
-poetry install
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/whoisridze/schedule-assistant-bot.git
+   cd schedule-assistant-bot
+   ```
 
-## Setup
+2. **Install dependencies with Poetry:**
+   ```bash
+   poetry install
+   ```
 
-1. Clone the repository to your local machine:
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory:
+   ```
+   TOKEN=your_telegram_bot_token
+   ADMINS=comma_separated_list_of_admin_user_ids
+   ```
 
-```bash
-git clone https://github.com/killmeridze/telegram-ai221-sentinel.git
-```
+4. **Customize the schedule:**
+   Edit the `rus_schedule.json` or `ukr_schedule.json` files to match your class schedule.
 
-2. Install dependencies with Poetry:
+5. **Set up sticker database (optional):**
+   Create a `stickers.db` file with a table containing:
+   - `id`: Primary key
+   - `sticker_id`: The Telegram sticker ID (can be found using online methods)
+   - `keyword`: The search term associated with the sticker
+   
+   **Tip**: You can use OCR (Optical Character Recognition) to quickly populate keywords for many stickers.
 
-```bash
-poetry install
-```
+6. **Start the bot:**
+   ```bash
+   cd src/bot
+   poetry run python main.py
+   ```
 
-3. Set up the environment variables by creating a `.env` file in the root directory:
+## 📱 Bot Navigation & Functionality
 
-```bash
-TOKEN=your_telegram_bot_token
-ADMINS=comma_separated_list_of_admin_user_ids
-```
+The bot supports both text commands and interactive buttons in its interface.
 
-4. Modify the schedule:
+### Main Functions
+- **Schedule Viewing**: Access today's or tomorrow's schedule via menu buttons
+- **Sticker Search**: Enter keywords after choosing the sticker search option
+- **Settings Management**: Change language, group, and quote preferences through the settings menu
+- **Notifications**: Subscribe or unsubscribe to daily schedule updates
+- **Quotes**: Receive daily inspirational quotes based on selected themes
 
-Open the `rus_schedule.json` or `ukr_schedule.json` file (depending on the language) and update the schedule entries as needed. The schedule is structured by days of the week, and each entry contains class time, class name, links (if applicable), and teacher information. Make sure to follow the existing format in the JSON file to avoid errors.
+**Note**: All major functions are accessible through the menu buttons that appear after starting the bot.
 
-1. Start the bot by running the following command inside `telegram-ai221-sentinel\src\bot` directory:
+## 📊 Logging and Monitoring
 
-```bash
-poetry run python main.py
-```
+The bot uses `loguru` for comprehensive logging:
+- Logs are stored in the `logs/` directory
+- 10MB maximum log file size with automatic compression
+- Detailed timestamps and error tracking
 
-## Usage
+## 🔧 Customization
 
-- **Schedule Notifications**:
+- **Schedule Format**: Follow the JSON structure in the example files to create custom schedules
+- **Quote Sources**: Edit the quote lists in the database to add new themes or content
+- **Language Support**: Add new languages by creating additional translation files
 
-  - Users can view today's schedule by selecting the "Schedule" button in the chat.
-  - They can also view the schedule for tomorrow by selecting the "Schedule for Tomorrow" button.
-  - The schedule is customized based on the user's selected group and language.
+## 👨‍💻 Contributing
 
-- **Quote Subscription**:
-
-  - Users can subscribe or unsubscribe from receiving daily motivational quotes.
-  - The bot allows users to change the theme of the quotes (e.g., success, life, motivation) via the settings menu.
-
-- **Sticker Search**:
-
-  - Users can enter keywords to search for specific stickers in the bot's database.
-  - After entering a keyword, the bot will display matching stickers that users can select and send in their chats.
-
-- **Settings**:
-
-  - Users can access the settings menu to change their preferred language (Russian or Ukrainian).
-  - They can switch between different groups to receive the appropriate schedule for their group.
-  - Users can also configure quote themes by selecting different tags for the types of quotes they want to receive.
-
-- **Admin Commands**:
-  - Admins have access to additional functionality, such as sending broadcast messages to all subscribed users.
-  - Admins can also manage user subscriptions and update settings for all users.
-
-## Logs
-
-The bot uses `loguru` for logging. Logs are saved to a file named `logging.log` in the root directory. The logging configuration ensures:
-
-- Log files have a maximum size of 10 MB. Once this size is reached, the log file is compressed into a `.zip` archive.
-- Logs contain timestamps, log levels, and detailed error messages.
-- Important events, such as sending messages to users and error handling, are recorded to help with debugging and monitoring.
-
-You can find the log files in the `logs\` directory. These logs are useful for tracking the bot's performance and diagnosing any issues that arise.
+Contributions are welcome! Please feel free to submit a Pull Request.
