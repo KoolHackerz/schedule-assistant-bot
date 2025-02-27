@@ -103,3 +103,10 @@ The bot uses `loguru` for comprehensive logging:
 ## 👨‍💻 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## ✍️ Credits
+
+This project was collaboratively developed by:
+
+- **[Nikita Zhmak (YoshkinKit)](https://github.com/YoshkinKit)** 
+- **[Ilya Veles (whoisridze)](https://github.com/whoisridze)** 
