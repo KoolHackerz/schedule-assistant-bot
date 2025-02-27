@@ -1,3 +1,7 @@
 *.log
 *.db
 *.env
+__pycache__/
+.vscode/
+logs/
+databases/

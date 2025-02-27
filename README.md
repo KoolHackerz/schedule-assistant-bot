@@ -16,19 +16,13 @@ This project is a Telegram bot that automatically sends schedules and quotes to 
 
 ## Requirements
 
-- Python 3.x
-- Required Python libraries:
-  - `python-telegram-bot`
-  - `loguru`
-  - `schedule`
-  - `requests`
-  - `sqlite3`
-  - `python-dotenv`
+- Python 3.12
+- Poetry
 
 To install all required dependencies, run:
 
 ```bash
-pip install -r requirements.txt
+poetry install
 ```
 
 ## Setup
@@ -36,24 +30,30 @@ pip install -r requirements.txt
 1. Clone the repository to your local machine:
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/killmeridze/telegram-ai221-sentinel.git
 ```
 
-2. Set up the environment variables by creating a `.env` file in the root directory:
+2. Install dependencies with Poetry:
+
+```bash
+poetry install
+```
+
+3. Set up the environment variables by creating a `.env` file in the root directory:
 
 ```bash
 TOKEN=your_telegram_bot_token
 ADMINS=comma_separated_list_of_admin_user_ids
 ```
 
-3. Modify the schedule:
+4. Modify the schedule:
 
 Open the `rus_schedule.json` or `ukr_schedule.json` file (depending on the language) and update the schedule entries as needed. The schedule is structured by days of the week, and each entry contains class time, class name, links (if applicable), and teacher information. Make sure to follow the existing format in the JSON file to avoid errors.
 
-4. Start the bot by running the following command:
+1. Start the bot by running the following command inside `telegram-ai221-sentinel\src\bot` directory:
 
 ```bash
-python main.py
+poetry run python main.py
 ```
 
 ## Usage
@@ -92,4 +92,4 @@ The bot uses `loguru` for logging. Logs are saved to a file named `logging.log` 
 - Logs contain timestamps, log levels, and detailed error messages.
 - Important events, such as sending messages to users and error handling, are recorded to help with debugging and monitoring.
 
-You can find the log files in the same directory where the bot is running. These logs are useful for tracking the bot's performance and diagnosing any issues that arise.
+You can find the log files in the `logs\` directory. These logs are useful for tracking the bot's performance and diagnosing any issues that arise.
