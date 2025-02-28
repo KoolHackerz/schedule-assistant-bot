@@ -33,6 +33,8 @@ def get_platform(link: str) -> str:
         return 'Google Meet'
     elif 'teams.microsoft' in link:
         return 'Microsoft Teams'
+    else:
+        return 'Unknown'
 
 def quote_tags_by_letters() -> str:
     '''Функция для получения тегов цитат по буквам'''

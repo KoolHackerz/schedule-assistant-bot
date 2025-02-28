@@ -1,129 +1,121 @@
 {
     "monday": [
         {
-            "week_parity": false,
-            "time": "8:00-9:35",
-            "name": "Психология - Лекция",
-            "links": [
-                "https://meet.google.com/gcv-yxmw-hwe"
-            ],
-            "teachers": "Волошенко М.А."
-        },
-        {
-            "week_parity": true,
-            "group": 1,
-            "time": "8:00-9:35",
-            "name": "Психология - Практика для группы ВД01-14",
-            "links": [
-                "https://meet.google.com/wvn-smak-kvi"
-            ],
-            "teachers": "Волошенко М.А."
-        },
-        {
             "time": "9:50-11:25",
-            "name": "Компьютерные сети - Лекция",
+            "name": "Технологии распределённых систем и параллельных вычислений - Лекция",
             "links": [
-                "https://us04web.zoom.us/j/9259707912?pwd=rDktkUw9qYd6nSRfiEN2Ws7VFKbVrl.1"
+                "https://us04web.zoom.us/j/75523031710?pwd=8qb2Fz4vdLcajVKsxlX7chpuQ6PCSH.1",
+                "Пароль: 1"
             ],
-            "teachers": "Кузнецов Н.А."
+            "teachers": "Агаджанян А.Р."
         },
         {
-            "week_parity": true,
             "time": "11:40-13:15",
-            "name": "Технологии создания ПП - Лаб",
+            "name": "Моделирование систем - Лекция",
             "links": [
-                "https://us02web.zoom.us/j/87647753497?pwd=eTJzOGo5bGZnNC9NMGRBVFNKRVlQUT09"
+                "https://us02web.zoom.us/j/75815387400?pwd=NmlqdGZmbW5yK1BuQmFiZXB1S2lKQT09",
+                "Пароль: dvP2D1"
             ],
-            "teachers": "Блажко А.А. и Дрозд М.А."
+            "teachers": "Николенко А.А."
         }
     ],
     "tuesday": [
         {
-            "week_parity": true,
-            "group": 2,
+            "week_parity": false,
             "time": "8:00-9:35",
-            "name": "Психология - Практика для группы ВД01-15",
+            "name": "Эстетика - Лекция",
             "links": [
-                "https://meet.google.com/zhx-gebj-tpx"
+                "https://us04web.zoom.us/j/5268770607?pwd=QXBSR1RtM0hKWWxtUmw3NHRoV29lQT09",
+                "Пароль: 706617"
             ],
-            "teachers": "Волошенко М.А."
+            "teachers": "Рыбка Н.Н."
         },
         {
             "time": "9:50-11:25",
-            "name": "Интеллектуальный анализ данных - Лекция",
+            "name": "Математические методы исследования операций - Лаб",
             "links": [
-                "https://teams.microsoft.com/l/team/19%3ASLGsU54KbqRzxjnxzf8KLm1GaBnMIoxOkrYl5q1Zews1%40thread.tacv2/conversations?groupId=bc2625ec-c4de-4c9b-bc6d-620b5f1ee674&tenantId=bd2fa240-71fc-45bd-abce-f1bc80beeb0a"
+                "https://us02web.zoom.us/j/5907519061?pwd=VINCbzR4NIVTRFU5WXQyVms3QmptUT09",
+                "Пароль: ajj61A"
             ],
-            "teachers": "Антощук С.Г."
+            "teachers": "Соловьёва Д.В."
         },
         {
-            "week_parity": true,
             "time": "11:40-13:15",
-            "name": "Численные методы - Лаб",
+            "name": "Моделирование систем - Лаб",
             "links": [
-                "https://teams.microsoft.com/l/meetup-join/19%3ayp3vNP3BqAVPkuW2Y8YqKOKXF0QQlydP0_Y1XiVUDqY1%40thread.tacv2/1724955558997?context=%7b%22Tid%22%3a%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2c%22Oid%22%3a%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7d"
+                "https://us02web.zoom.us/j/75815387400?pwd=NmlqdGZmbW5yK1BuQmFiZXB1S2lKQT09",
+                "Пароль: dvP2D1"
             ],
-            "teachers": "Шпинковський А.А. и Дрозд Ю.В."
-        },
-        {
-            "week_parity": true,
-            "time": "13:30-15:05",
-            "name": "Обеспечение качества и контроль качества и тестирование ПП - Лаб",
-            "links": [],
-            "teachers": "Бабич Н.И. и Баськов И.А."
+            "teachers": "Николенко А.А. и Молчиниколова И.А."
         }
     ],
     "wednesday": [
         {
             "time": "9:50-11:25",
-            "name": "Інтелектуальний аналіз даних - Лаб",
+            "name": "Программирование мобильных устройств на базе ОС Android - Лекция",
             "links": [
-                "https://meet.google.com/whs-kgcz-wqj"
+                "https://bit.ly/hodovychenko_zoom"
             ],
-            "teachers": "Кошутина Д.В. и Смык С.Ю."
+            "teachers": "Годовиченко Н.А."
         },
         {
             "time": "11:40-13:15",
-            "name": "Численные методы - Лекция",
+            "name": "Технологии распределённых систем и параллельных вычислений - Лаб",
             "links": [
-                "https://teams.microsoft.com/l/meetup-join/19%3ayp3vNP3BqAVPkuW2Y8YqKOKXF0QQlydP0_Y1XiVUDqY1%40thread.tacv2/1724955558997?context=%7b%22Tid%22%3a%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2c%22Oid%22%3a%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7d"
+                "https://us04web.zoom.us/j/75523031710?pwd=8qb2Fz4vdLcajVKsxlX7chpuQ6PCSH.1",
+                "Пароль: 1"
             ],
-            "teachers": "Шпинковський А.А."
+            "teachers": "Агаджанян А.Р. и Вороненко М.А."
+        },
+        {
+            "week_parity": true,
+            "time": "13:30-15:05",
+            "name": "Программирование мобильных устройств на базе ОС Android - Лаб",
+            "links": [
+                "https://bit.ly/hodovychenko_zoom"
+            ],
+            "teachers": "Соловьёва Д.В. и Смык С.Ю."
         }
     ],
     "thursday": [
         {
-            "time": "9:50-11:25",
-            "name": "Обеспечение качества и контроль качества и тестирование ПП - Лекция",
-            "links": [
-                "https://us02web.zoom.us/j/87647753497?pwd=eTJzOGo5bGZnNC9NMGRBVFNKRVlQUT09"
-            ],
-            "teachers": "Баськов И.А."
-        }
-    ],
-    "friday": [
-        {
+            "week_parity": false,
             "time": "8:00-9:35",
-            "name": "Компьютерные сети - Лаб",
-            "links": [],
-            "teachers": "Кузнецов Н.А."
+            "name": "Эстетика - Практика",
+            "links": [
+                "https://us04web.zoom.us/j/5268770607?pwd=QXBSR1RtM0hKWWxtUmw3NHRoV29lQT09",
+                "Пароль: 706617"
+            ],
+            "teachers": "Рыбка Н.Н."
         },
         {
             "time": "9:50-11:25",
-            "name": "Технологии создания ПП - Лекция",
+            "name": "Основы DevOps - Лекция",
             "links": [
-                "https://us02web.zoom.us/j/87647753497?pwd=eTJzOGo5bGZnNC9NMGRBVFNKRVlQUT09",
-                "Пароль: 306089"
+                "https://teams.microsoft.com/l/meetup-join/19%3A2RBGfoxFMJDp26Sn6nINFPJ5ZH3vysZUGIBCQRtWXTQ1%40thread.tacv2/1740303763152?context=%7B%22Tid%22%3A%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2C%22Oid%22%3A%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7D"
             ],
-            "teachers": "Блажко А.А."
+            "teachers": "Шпинковский А.А."
         },
         {
             "time": "11:40-13:15",
-            "name": "Веб-технологии и Веб-дизайн - Лекция",
-            "links": [],
-            "teachers": "Червоненко П.П."
+            "name": "Математические методы исследования операций - Лекция",
+            "links": [
+                "https://us02web.zoom.us/j/4209706766?pwd=YVhZSHVYWGJOVkZLc2t0VFlkbDdxQT09&omn=85498519147",
+                "Пароль: 205010"
+            ],
+            "teachers": "Болтёнков В.А."
+        },
+        {
+            "week_parity": true,
+            "time": "13:30-15:05",
+            "name": "Основы DevOps - Лаб",
+            "links": [
+                "https://teams.microsoft.com/l/meetup-join/19%3A2RBGfoxFMJDp26Sn6nINFPJ5ZH3vysZUGIBCQRtWXTQ1%40thread.tacv2/1740303763152?context=%7B%22Tid%22%3A%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2C%22Oid%22%3A%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7D"
+            ],
+            "teachers": "Шпинковский А.А. и Засидько А.Я."
         }
     ],
+    "friday": [],
     "saturday": [],
     "sunday": []
 }

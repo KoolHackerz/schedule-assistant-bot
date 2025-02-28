@@ -1,10 +1,10 @@
 [project]
-name = "telegram-ai221-sentinel"
+name = "schedule-assistant-bot"
 version = "0.1.0"
 description = ""
 authors = [
     { name = "YoshkinKit", email = "nikita.zhmak8872@gmail.com" }, 
-    { name = "killmeridze", email = "kurtcobainuarethebest@gmail.com" },
+    { name = "whoisridze", email = "kurtcobainuarethebest@gmail.com" },
 ]
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
