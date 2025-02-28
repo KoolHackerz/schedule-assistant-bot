@@ -7,7 +7,7 @@ authors = [
     { name = "whoisridze", email = "kurtcobainuarethebest@gmail.com" },
 ]
 readme = "README.md"
-requires-python = ">=3.12,<4.0"
+requires-python = ">=3.11,<4.0"
 dependencies = [
     "schedule (>=1.2.2,<2.0.0)",
     "loguru (>=0.7.3,<0.8.0)",
