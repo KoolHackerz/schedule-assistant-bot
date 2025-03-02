@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to VM instance
         run: |
           gcloud compute ssh --zone "${{ secrets.GCP_ZONE }}" "${{ secrets.GCP_INSTANCE }}" \
-            --command "cd cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && git pull && \
+            --command "cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && git pull && \
                     tmux send-keys -t bot C-c && tmux send-keys -t bot C-c && sleep 2 && \
                     tmux send-keys -t bot 'cd cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry install' Enter && \
                     tmux send-keys -t bot 'cd cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry run python main.py' Enter"
