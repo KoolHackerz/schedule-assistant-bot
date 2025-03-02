@@ -24,6 +24,6 @@ jobs:
             --command "cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && \
                     git config --global --add safe.directory /home/nikita_zhmak8872/telegram-ai221-sentinel && \
                     git pull && \
-                    tmux send-keys -t bot C-c && tmux send-keys -t bot C-c && sleep 2 && \
-                    tmux send-keys -t bot 'cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry install' Enter && \
-                    tmux send-keys -t bot 'cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry run python main.py' Enter"
+                    tmux send-keys -S /var/tmux/shader_session -t C-c && tmux send-keys -S /var/tmux/shader_session -t C-c && sleep 2 && \
+                    tmux send-keys -S /var/tmux/shader_session -t 'cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry install' Enter && \
+                    tmux send-keys -S /var/tmux/shader_session -t 'cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry run python main.py' Enter"
