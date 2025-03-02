@@ -21,7 +21,8 @@ jobs:
       - name: Deploy to VM instance
         run: |
           gcloud compute ssh --zone "${{ secrets.GCP_ZONE }}" "${{ secrets.GCP_INSTANCE }}" \
-            --command "cd /home/nikita_zhmak8872/telegram-ai221-sentinel && \
+            --command "cd /home/nikita_zhmak8872/ && source .bashrc && \
+                    cd /home/nikita_zhmak8872/telegram-ai221-sentinel && \
                     git config --global --add safe.directory /home/nikita_zhmak8872/telegram-ai221-sentinel && \
                     git pull && \
                     cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry install && \
