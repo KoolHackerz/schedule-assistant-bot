@@ -25,5 +25,5 @@ jobs:
                     cd /home/nikita_zhmak8872/telegram-ai221-sentinel && \
                     git config --global --add safe.directory /home/nikita_zhmak8872/telegram-ai221-sentinel && \
                     git pull && \
-                    cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && poetry install && \
+                    cd /home/nikita_zhmak8872/telegram-ai221-sentinel/src/bot/ && /home/nikita_zhmak8872/.local/bin/poetry install && \
                     sudo systemctl restart telegram-bot"
