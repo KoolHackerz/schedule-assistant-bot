@@ -31,8 +31,8 @@ def register_schedule_handlers(bot):
             bot.send_message(chat_id=message.chat.id, text=message_text, parse_mode="MarkdownV2",
                             link_preview_options=types.LinkPreviewOptions(is_disabled=True))
 
-        logger.info(
-            f'Sent schedule to {message.from_user.username} ({message.from_user.first_name})(user_id - {message.from_user.id}) via command "{message.text}"')
+            logger.info(
+                f'Sent schedule to {message.from_user.username} ({message.from_user.first_name})(user_id - {message.from_user.id}) via command "{message.text}"')
 
     @bot.message_handler(func=lambda message: message.text == BUTTON_TEXTS[db.get_user_language(message.chat.id)]['schedule_tomorrow'])
     def schedule_tomorrow(message: types.Message) -> None:
@@ -42,9 +42,10 @@ def register_schedule_handlers(bot):
         message_text = schedule_text(
             tomorrow, user_language, user_group, message.chat.id)
 
-        message_text = escape_chars(message_text)
+        if message_text:
+            message_text = escape_chars(message_text)
 
-        bot.send_message(chat_id=message.chat.id, text=message_text, parse_mode="MarkdownV2",
-                        link_preview_options=types.LinkPreviewOptions(is_disabled=True))
-        logger.info(
-            f'Sent schedule to {message.from_user.username} ({message.from_user.first_name})(user_id - {message.from_user.id}) via command "{message.text}"')
+            bot.send_message(chat_id=message.chat.id, text=message_text, parse_mode="MarkdownV2",
+                            link_preview_options=types.LinkPreviewOptions(is_disabled=True))
+            logger.info(
+                f'Sent schedule to {message.from_user.username} ({message.from_user.first_name})(user_id - {message.from_user.id}) via command "{message.text}"')

@@ -1,0 +1,25 @@
+name: Deploy to Google Cloud
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          
+      - name: Deploy to VM instance
+        run: |
+          gcloud compute ssh --zone "${{ secrets.GCP_ZONE }}" "${{ secrets.GCP_INSTANCE }}" \
+            --command "cd ~/telegram-ai221-sentinel/src/bot && git pull && \
+                    tmux send-keys -t bot C-c && tmux send-keys -t bot C-c && sleep 2 && \
+                    tmux send-keys -t bot 'cd ~/telegram-ai221-sentinel/src/bot && poetry install' Enter && \
+                    tmux send-keys -t bot 'cd ~/telegram-ai221-sentinel/src/bot && poetry run python main.py' Enter"

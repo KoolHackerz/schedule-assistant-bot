@@ -183,7 +183,8 @@ def schedule_text(today: datetime.date, language: str, group: int, chat_id: int)
     if not schedule:
         if VOICE_FILE_CONTENT:
             bot = TelegramBot.get_instance().bot
-            bot.send_voice(chat_id, VOICE_FILE_CONTENT)
+            bot.send_voice(chat_id, VOICE_FILE_CONTENT, caption=configuration.BUTTON_TEXTS[language]["no_schedule"])
+            logger.info(f'Sent voice message to {chat_id}')
         return ''
 
     message_text = configuration.BUTTON_TEXTS[language]["schedule_for_day"].format(
