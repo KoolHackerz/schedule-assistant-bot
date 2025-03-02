@@ -20,7 +20,6 @@ def register_schedule_handlers(bot):
     @bot.message_handler(func=lambda message: message.text == BUTTON_TEXTS[db.get_user_language(message.chat.id)]['schedule'])
     def schedule(message: types.Message) -> None:
         today = datetime.date.today()
-        bot.send_message(chat_id=message.chat.id, text=f"📅 *{today.strftime('%d.%m.%Y')}*",)
         user_language = db.get_user_language(message.chat.id)
         user_group = db.get_user_group(message.chat.id)
 

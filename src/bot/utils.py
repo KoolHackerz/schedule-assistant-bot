@@ -99,15 +99,15 @@ def update_buttons(language: str, user_id: int, is_admin: bool = False, mode: st
     elif mode == 'settings':
         button_change_language = types.KeyboardButton(
             configuration.BUTTON_TEXTS[language]["change_language"])
-        button_change_group = types.KeyboardButton(
-            configuration.BUTTON_TEXTS[language]["change_group"])
+        # button_change_group = types.KeyboardButton(
+        #     configuration.BUTTON_TEXTS[language]["change_group"])
         button_configure_quote = types.KeyboardButton(
             configuration.BUTTON_TEXTS[language]["configure_quote"])
         button_return = types.KeyboardButton(configuration.BUTTON_TEXTS[language]["return"])
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        keyboard.row(button_change_language, button_change_group)
-        keyboard.row(button_configure_quote)
+        # keyboard.row(button_change_language, button_change_group)
+        keyboard.row(button_change_language, button_configure_quote)
         keyboard.row(button_return)
 
     # Меню цитат

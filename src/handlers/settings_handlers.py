@@ -118,47 +118,47 @@ def register_settings_handlers(bot):
             call.message.chat.id, message_id=call.message.message_id, reply_markup='')
 
 
-    @bot.message_handler(func=lambda message: message.text == BUTTON_TEXTS[db.get_user_language(message.chat.id)]['change_group'])
-    def change_group(message: types.Message) -> None:
-        user_language = db.get_user_language(message.chat.id)
+    # @bot.message_handler(func=lambda message: message.text == BUTTON_TEXTS[db.get_user_language(message.chat.id)]['change_group'])
+    # def change_group(message: types.Message) -> None:
+    #     user_language = db.get_user_language(message.chat.id)
 
-        keyboard = types.InlineKeyboardMarkup()
+    #     keyboard = types.InlineKeyboardMarkup()
 
-        first_group = types.InlineKeyboardButton(text='ВД01-14', callback_data='1')
-        second_group = types.InlineKeyboardButton(
-            text='ВД01-15', callback_data='2')
+    #     first_group = types.InlineKeyboardButton(text='ВД01-14', callback_data='1')
+    #     second_group = types.InlineKeyboardButton(
+    #         text='ВД01-15', callback_data='2')
 
-        keyboard.add(first_group, second_group)
+    #     keyboard.add(first_group, second_group)
 
-        bot.send_message(
-            message.chat.id, BUTTON_TEXTS[user_language]["group_change_prompt"], reply_markup=keyboard)
-        logger.info(
-            f'User {message.from_user.username} ({message.from_user.first_name})(user_id - {message.from_user.id}) tried to change group')
+    #     bot.send_message(
+    #         message.chat.id, BUTTON_TEXTS[user_language]["group_change_prompt"], reply_markup=keyboard)
+    #     logger.info(
+    #         f'User {message.from_user.username} ({message.from_user.first_name})(user_id - {message.from_user.id}) tried to change group')
 
 
-    @bot.callback_query_handler(func=lambda call: call.data == '1' or call.data == '2')
-    def answer_change_group(call: types.CallbackQuery) -> None:
-        new_user_group_number = int(call.data)
-        new_user_group = 'ВД01-14' if new_user_group_number == 1 else 'ВД01-15'
+    # @bot.callback_query_handler(func=lambda call: call.data == '1' or call.data == '2')
+    # def answer_change_group(call: types.CallbackQuery) -> None:
+    #     new_user_group_number = int(call.data)
+    #     new_user_group = 'ВД01-14' if new_user_group_number == 1 else 'ВД01-15'
 
-        user_language = db.get_user_language(call.message.chat.id)
-        user_group = db.get_user_group(call.message.chat.id)
+    #     user_language = db.get_user_language(call.message.chat.id)
+    #     user_group = db.get_user_group(call.message.chat.id)
 
-        if new_user_group_number == user_group:
-            bot.answer_callback_query(
-                call.id, BUTTON_TEXTS[user_language]["group_already_selected"])
-            logger.info(
-                f'User {call.message.chat.username} ({call.from_user.first_name})(user_id - {call.message.chat.id}) had been already in {new_user_group} group')
-            return
+    #     if new_user_group_number == user_group:
+    #         bot.answer_callback_query(
+    #             call.id, BUTTON_TEXTS[user_language]["group_already_selected"])
+    #         logger.info(
+    #             f'User {call.message.chat.username} ({call.from_user.first_name})(user_id - {call.message.chat.id}) had been already in {new_user_group} group')
+    #         return
 
-        db.update_user_group(new_user_group_number, call.message.chat.id)
+    #     db.update_user_group(new_user_group_number, call.message.chat.id)
 
-        bot.answer_callback_query(
-            call.id, BUTTON_TEXTS[user_language]["group_changed"])
-        logger.info(
-            f'User {call.message.chat.username} ({call.from_user.first_name})(user_id - {call.message.chat.id}) changed group to {new_user_group}')
-        bot.send_message(chat_id=call.message.chat.id,
-                        text=BUTTON_TEXTS[user_language]["current_group"].format(group_name=new_user_group))
+    #     bot.answer_callback_query(
+    #         call.id, BUTTON_TEXTS[user_language]["group_changed"])
+    #     logger.info(
+    #         f'User {call.message.chat.username} ({call.from_user.first_name})(user_id - {call.message.chat.id}) changed group to {new_user_group}')
+    #     bot.send_message(chat_id=call.message.chat.id,
+    #                     text=BUTTON_TEXTS[user_language]["current_group"].format(group_name=new_user_group))
 
-        bot.edit_message_reply_markup(
-            call.message.chat.id, message_id=call.message.message_id, reply_markup='')
+    #     bot.edit_message_reply_markup(
+    #         call.message.chat.id, message_id=call.message.message_id, reply_markup='')
