@@ -66,20 +66,20 @@ localized_weekday_names = {
 day_names = [None, 'monday', 'tuesday', 'wednesday', 'thursday', 'friday']
 
 quote_tags = [
-    'Age', 'Athletics',
+    'Age',
     'Business',
     'Change', 'Character', 'Competition', 'Conservative', 'Courage', 'Creativity',
     'Education', 'Ethics',
     'Failure', 'Faith', 'Family', 'Famous Quotes', 'Film', 'Freedom', 'Friendship', 'Future',
     'Generosity', 'Genius', 'Gratitude',
-    'Happiness', 'Health', 'History', 'Honor', 'Humor', 'Humorous',
+    'Happiness', 'Health', 'History', 'Honor', 'Humorous',
     'Imagination', 'Inspirational',
     'Knowledge',
     'Leadership', 'Life', 'Literature', 'Love',
     'Mathematics', 'Motivational',
     'Nature',
     'Opportunity',
-    'Pain', 'Perseverance', 'Philosophy', 'Politics', 'Power Quotes', 'Proverb',
+    'Pain', 'Perseverance', 'Philosophy', 'Politics', 'Power Quotes',
     'Religion',
     'Sadness', 'Science', 'Self', 'Self Help', 'Social Justice', 'Society', 'Spirituality', 'Sports', 'Stupidity', 'Success',
     'Technology', 'Time', 'Tolerance', 'Truth',

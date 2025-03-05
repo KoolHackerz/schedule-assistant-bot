@@ -40,7 +40,15 @@ def send_schedule() -> None:
                 today, language, group, chat_id)
 
             if quotes_subscribed:
-                message_text += f"\n>{quotes.get_random_quote(db.get_user_quote_tag(chat_id), language[:-1])}**"
+                quote = quotes.get_random_quote(db.get_user_quote_tag(chat_id), language[:-1])
+                if quote:
+                    message_text += f"\n>{quote}**"
+                else:
+                    logger.warning(
+                        f"Failed to get a quote with tag {db.get_user_quote_tag(chat_id)}" + \
+                        f" for user with user_id - {chat_id}. Changed to default tag.")
+                    db.change_user_quote_tag_to_default(chat_id)
+                    message_text += f"\n>{quotes.get_random_quote('Success', language[:-1])}**"
 
             message_text = escape_chars(message_text)
 

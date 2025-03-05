@@ -225,3 +225,12 @@ def get_subscribers() -> list[tuple]:
         fetched = cursor.fetchall()
 
     return fetched
+
+def change_user_quote_tag_to_default(user_id: int) -> None:
+    '''Функция для изменения тэга цитаты пользователя на дефолтный'''
+
+    with sqlite3.connect(subscriptions_db_path) as conn:
+        cursor = conn.cursor()
+        cursor.execute(
+            """UPDATE subscriptions SET quote_tag = 'Success' WHERE user_id == ?""", (user_id, ))
+        conn.commit()

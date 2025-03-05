@@ -15,7 +15,7 @@ def get_random_quote(tag: str, lang: str) -> str | None:
     
     response = requests.get(f"{quotes_api_url}/quotes/random?tags={tag}")
 
-    if response.ok:
+    if response.ok and response.json():
         text = response.json()[0]["content"]
         author = response.json()[0]["author"]
 
@@ -27,7 +27,7 @@ def get_random_quote(tag: str, lang: str) -> str | None:
             logger.error(f"Translation API Error: {translation_response.status_code}: {translation_response.json()['responseDetails']}")
             return f'{text} © {author}'
     else:
-        logger.error(f"Quotes API Error: {response.status_code}")
+        logger.error(f"Quotes API Error: {response.status_code if not response.ok else 'Empty response'}")
         return
 
     return quote
