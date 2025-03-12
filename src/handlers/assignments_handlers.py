@@ -46,13 +46,12 @@ def register_assignments_handlers(bot):
             bot.send_message(
                 message.chat.id, BUTTON_TEXTS[language]["no_assignments"])
         else:
-            response = f"📋 *{BUTTON_TEXTS[language]['assignments_list_header']}*\n\n"
+            response = f"📋 <b>{BUTTON_TEXTS[language]['assignments_list_header']}</b>\n\n"
             for assignment in assignments['assignments']:
-                response += f"🔹 {BUTTON_TEXTS[language]['assignment_subject']}: *{assignment['subject']}*\n"
+                response += f"🔹 {BUTTON_TEXTS[language]['assignment_subject']}: <b>{assignment['subject']}</b>\n"
                 response += f"✏️ {BUTTON_TEXTS[language]['task']}: {assignment['task']}\n"
                 response += f"📅 {BUTTON_TEXTS[language]['deadline']}: {assignment['deadline']}\n\n"
-            response = escape_chars(response)
-            bot.send_message(message.chat.id, response, parse_mode="MarkdownV2")
+            bot.send_message(message.chat.id, response, parse_mode="HTML")
 
     @bot.message_handler(func=lambda message: message.text == BUTTON_TEXTS[db.get_user_language(message.chat.id)]["view_assignments"])
     def show_assignments(message: types.Message):
