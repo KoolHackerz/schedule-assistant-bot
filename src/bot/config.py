@@ -27,6 +27,15 @@ class Config:
         load_dotenv()
         self.TOKEN = os.getenv('TOKEN')
         self.ADMINS = [int(admin) for admin in os.getenv('ADMINS').split(',')]
+        self.USE_WEBHOOK = os.getenv('USE_WEBHOOK', 'False').lower() == 'true'
+        self.WEBHOOK_HOST = os.getenv('WEBHOOK_HOST', '')
+        self.WEBHOOK_PORT = int(os.getenv('WEBHOOK_PORT', 8443))
+        self.WEBHOOK_LISTEN = os.getenv('WEBHOOK_LISTEN', '0.0.0.0')
+        self.WEBHOOK_SSL_CERT = os.getenv('WEBHOOK_SSL_CERT', '../ssl/webhook_cert.pem')
+        self.WEBHOOK_SSL_PRIV = os.getenv('WEBHOOK_SSL_PRIV', '../ssl/webhook_pkey.pem')
+        self.WEBHOOK_URL_BASE = f'https://{self.WEBHOOK_HOST}'
+        self.WEBHOOK_URL_PATH = f"/{self.TOKEN}/"
+        self.USE_SSL_CERT = os.getenv('USE_SSL_CERT', 'False').lower() == 'true'
         
         with open('../data/localization.json', 'r', encoding='utf-8') as file:
             BUTTON_TEXTS = json.load(file)

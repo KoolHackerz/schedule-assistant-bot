@@ -38,7 +38,9 @@ if __name__ == '__main__':
     thread = Thread(target=schedule_checker, daemon=True)
     thread.start()
 
-    telegram_bot.start_polling()
+    telegram_bot.start()
 
     while thread.is_alive:
         thread.join(1)
+    
+    telegram_bot.bot.remove_webhook()
