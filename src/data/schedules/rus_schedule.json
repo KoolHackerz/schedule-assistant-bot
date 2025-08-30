@@ -2,122 +2,93 @@
     "monday": [
         {
             "time": "9:50-11:25",
-            "name": "Технологии распределённых систем и параллельных вычислений - Лекция",
+            "name": "Цифровая обработка звука и изображений - Лекция",
             "links": [
-                "https://us04web.zoom.us/j/75523031710?pwd=8qb2Fz4vdLcajVKsxlX7chpuQ6PCSH.1",
-                "Пароль: 1"
+                "https://us02web.zoom.us/j/87266012465?pwd=VmtrTC9kUFZTRXVhZXF1NEtod3h2dz09",
+                "Пароль: 605676"
             ],
-            "teachers": "Агаджанян А.Р."
+            "teachers": "Бабилунга О.Ю."
         },
         {
             "time": "11:40-13:15",
-            "name": "Моделирование систем - Лекция",
+            "name": "Системный анализ и теория принятия решений - Лекция",
             "links": [
-                "https://us02web.zoom.us/j/75815387400?pwd=NmlqdGZmbW5yK1BuQmFiZXB1S2lKQT09",
-                "Пароль: dvP2D1"
+                "https://us02web.zoom.us/j/5907519061?pwd=VlNCbzR4NlVTRFU5WXQyVms3QmptUT09",
+                "Пароль: ajj61A"
             ],
-            "teachers": "Николенко А.А."
+            "teachers": "Болтёнков В.А."
         }
     ],
     "tuesday": [
         {
-            "week_parity": false,
-            "time": "8:00-9:35",
-            "name": "Эстетика - Лекция",
-            "links": [
-                "https://us04web.zoom.us/j/5268770607?pwd=QXBSR1RtM0hKWWxtUmw3NHRoV29lQT09",
-                "Пароль: 706617"
-            ],
-            "teachers": "Рыбка Н.Н."
-        },
-        {
             "time": "9:50-11:25",
-            "name": "Математические методы исследования операций - Лаб",
-            "links": [
-                "https://us02web.zoom.us/j/5907519061?pwd=VINCbzR4NIVTRFU5WXQyVms3QmptUT09",
-                "Пароль: ajj61A"
-            ],
-            "teachers": "Болтёнков В.А."
+            "name": "Компьютерная визуализация - Лекция",
+            "links": [],
+            "teachers": "Бабич Н.И."
         },
         {
             "time": "11:40-13:15",
-            "name": "Моделирование систем - Лаб",
-            "links": [
-                "https://us02web.zoom.us/j/75815387400?pwd=NmlqdGZmbW5yK1BuQmFiZXB1S2lKQT09",
-                "Пароль: dvP2D1"
-            ],
-            "teachers": "Николенко А.А."
+            "name": "Методы и системы ИИ - Лаб",
+            "links": [],
+            "teachers": "Арсирий Е.А. и Смык С.Ю."
+        },
+        {
+            "week_parity": false,
+            "time": "13:30-15:05",
+            "name": "Цифровая обработка звука и изображений - Лаб",
+            "links": [],
+            "teachers": "Николенко А.А. и Бабилунга О.Ю."
+        },
+        {
+            "week_parity": true,
+            "time": "13:30-15:05",
+            "name": "Компьютерная визуализация - Лаб",
+            "links": [],
+            "teachers": "Бабич Н.И. и Волков А.С."
         }
     ],
     "wednesday": [
         {
             "time": "9:50-11:25",
-            "name": "Программирование мобильных устройств на базе ОС Android - Лекция",
-            "links": [
-                "https://bit.ly/hodovychenko_zoom"
-            ],
-            "teachers": "Годовиченко Н.А."
+            "name": "Технологии защиты информации - Лекция",
+            "links": [],
+            "teachers": "Болтёнков В.А."
         },
         {
             "time": "11:40-13:15",
-            "name": "Технологии распределённых систем и параллельных вычислений - Лаб",
-            "links": [
-                "https://us04web.zoom.us/j/3298797262?pwd=eTQzYWtsRWRyNEtPS3BxUzhwTzcwdz09",
-                "Пароль: 9uUveM"
-            ],
-            "teachers": "Вороненко М.А."
-        },
-        {
-            "week_parity": true,
-            "time": "13:30-15:05",
-            "name": "Программирование мобильных устройств на базе ОС Android - Лаб",
-            "links": [
-                "https://us04web.zoom.us/j/3850184769?pwd=NUpkcWhqTlpwUlVYSkhGbXB4bWM1Zz09"
-            ],
-            "teachers": "Соловьёва Д.В."
+            "name": "Проектирование ИС - Лаб",
+            "links": [],
+            "teachers": "Галчонков О.Н. и Баськов И.А."
         }
     ],
     "thursday": [
         {
-            "week_parity": false,
-            "time": "8:00-9:35",
-            "name": "Эстетика - Практика",
-            "links": [
-                "https://us04web.zoom.us/j/5268770607?pwd=QXBSR1RtM0hKWWxtUmw3NHRoV29lQT09",
-                "Пароль: 706617"
-            ],
-            "teachers": "Рыбка Н.Н."
-        },
-        {
             "time": "9:50-11:25",
-            "name": "Основы DevOps - Лекция",
-            "links": [
-                "https://teams.microsoft.com/l/meetup-join/19%3A2RBGfoxFMJDp26Sn6nINFPJ5ZH3vysZUGIBCQRtWXTQ1%40thread.tacv2/1740303763152?context=%7B%22Tid%22%3A%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2C%22Oid%22%3A%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7D",
-                "https://us02web.zoom.us/j/81858238228?pwd=pOTVzAE5lVs0ZWiP5wiEER6JaAcT6p.1"
-            ],
-            "teachers": "Шпинковский А.А."
+            "name": "Технологии защиты информации - Лаб",
+            "links": [],
+            "teachers": "Трояк К.Ю. и Соловьёва Д.В."
         },
         {
             "time": "11:40-13:15",
-            "name": "Математические методы исследования операций - Лекция",
-            "links": [
-                "https://us02web.zoom.us/j/4209706766?pwd=YVhZSHVYWGJOVkZLc2t0VFlkbDdxQT09&omn=85498519147",
-                "Пароль: 205010"
-            ],
-            "teachers": "Куваева В.И."
-        },
-        {
-            "week_parity": true,
-            "time": "13:30-15:05",
-            "name": "Основы DevOps - Лаб",
-            "links": [
-                "https://teams.microsoft.com/l/meetup-join/19%3A2RBGfoxFMJDp26Sn6nINFPJ5ZH3vysZUGIBCQRtWXTQ1%40thread.tacv2/1740303763152?context=%7B%22Tid%22%3A%22bd2fa240-71fc-45bd-abce-f1bc80beeb0a%22%2C%22Oid%22%3A%226e50c4db-d1c1-4aee-989d-96271729c62c%22%7D",
-                "https://us02web.zoom.us/j/81858238228?pwd=pOTVzAE5lVs0ZWiP5wiEER6JaAcT6p.1"
-            ],
-            "teachers": "Шпинковский А.А. и Засидько А.Я."
+            "name": "Проектирование ИС - Лекция",
+            "links": [],
+            "teachers": "Галчонков О.Н."
         }
     ],
-    "friday": [],
+    "friday": [
+        {
+            "time": "9:50-11:25",
+            "name": "Методы и системы ИИ - Лекция",
+            "links": [],
+            "teachers": "Арсирий Е.А."
+        },
+        {
+            "time": "11:40-13:15",
+            "name": "Системный анализ и теория принятия решений - Лаб",
+            "links": [],
+            "teachers": "Гнатенко В.Ю. и Куваева В.И."
+        }
+    ],
     "saturday": [],
     "sunday": []
 }
