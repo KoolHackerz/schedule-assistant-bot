@@ -23,13 +23,18 @@
         {
             "time": "9:50-11:25",
             "name": "Компьютерная визуализация - Лекция",
-            "links": [],
+            "links": [
+                "https://meet.google.com/sqe-gxcu-uqm"
+            ],
             "teachers": "Бабич Н.И."
         },
         {
             "time": "11:40-13:15",
             "name": "Методы и системы ИИ - Лаб",
-            "links": [],
+            "links": [
+                "https://us02web.zoom.us/j/88573994331?pwd=S242c0FXVjRCYzRzS3FvU3dZbENtZz09",
+                "Пароль: 779285"
+            ],
             "teachers": "Арсирий Е.А. и Смык С.Ю."
         },
         {
@@ -43,7 +48,9 @@
             "week_parity": true,
             "time": "13:30-15:05",
             "name": "Компьютерная визуализация - Лаб",
-            "links": [],
+            "links": [
+                "https://meet.google.com/sqe-gxcu-uqm"
+            ],
             "teachers": "Бабич Н.И. и Волков А.С."
         }
     ],
@@ -51,13 +58,18 @@
         {
             "time": "9:50-11:25",
             "name": "Технологии защиты информации - Лекция",
-            "links": [],
+            "links": [
+                "https://us02web.zoom.us/j/5907519061?pwd=VlNCbzR4NlVTRFU5WXQyVms3QmptUT09",
+                "Пароль: ajj61A"
+            ],
             "teachers": "Болтёнков В.А."
         },
         {
             "time": "11:40-13:15",
             "name": "Проектирование ИС - Лаб",
-            "links": [],
+            "links": [
+                "https://us04web.zoom.us/j/2872972964?pwd=NVBhNmVVN2lNQlpqWmxHNWhOeXBFUT09"
+            ],
             "teachers": "Галчонков О.Н. и Баськов И.А."
         }
     ],
@@ -65,13 +77,19 @@
         {
             "time": "9:50-11:25",
             "name": "Технологии защиты информации - Лаб",
-            "links": [],
+            "links": [
+                "https://us02web.zoom.us/j/3850184769?pwd=NUpkcWhqTlpwUlVYSkhGbXB4bWM1Zz09",
+                "Пароль: 9gQSu7"
+            ],
             "teachers": "Трояк К.Ю. и Соловьёва Д.В."
         },
         {
             "time": "11:40-13:15",
             "name": "Проектирование ИС - Лекция",
-            "links": [],
+            "links": [
+                "https://us02web.zoom.us/j/83272967250?pwd=IbyKTska4VbHfyAjytJFcel32ygRgW.1",
+                "Пароль: 879065"
+            ],
             "teachers": "Галчонков О.Н."
         }
     ],
@@ -79,13 +97,19 @@
         {
             "time": "9:50-11:25",
             "name": "Методы и системы ИИ - Лекция",
-            "links": [],
+            "links": [
+                "https://us02web.zoom.us/j/88573994331?pwd=S242c0FXVjRCYzRzS3FvU3dZbENtZz09",
+                "Пароль: 779285"
+            ],
             "teachers": "Арсирий Е.А."
         },
         {
             "time": "11:40-13:15",
             "name": "Системный анализ и теория принятия решений - Лаб",
-            "links": [],
+            "links": [
+                "https://us02web.zoom.us/j/4209706766?pwd=sAQS5dboxaQ2NFnBGQcAWp5JwLpLCa.1&omn=85156476110",
+                "Пароль: 875422"
+            ],
             "teachers": "Гнатенко В.Ю. и Куваева В.И."
         }
     ],
