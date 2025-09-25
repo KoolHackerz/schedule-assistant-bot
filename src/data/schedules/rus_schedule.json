@@ -115,6 +115,10 @@
             "teachers": "Гнатенко В.Ю. и Куваева В.И."
         }
     ],
-    "saturday": [],
+    "saturday": [
+        {
+            "schedule-day": 0
+        }
+    ],
     "sunday": []
 }

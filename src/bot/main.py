@@ -28,7 +28,7 @@ if __name__ == '__main__':
     sc.every().tuesday.at('07:00').do(send_schedule)
     sc.every().wednesday.at('07:00').do(send_schedule)
     sc.every().thursday.at('07:00').do(send_schedule)
-    # sc.every().friday.at('07:00').do(send_schedule)
+    sc.every().friday.at('07:00').do(send_schedule)
     
     if Config.get_instance().saturday_lessons:
         sc.every().saturday.at('07:00').do(send_schedule)
