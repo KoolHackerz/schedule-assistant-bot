@@ -63,7 +63,7 @@ def send_schedule() -> None:
 
     if configuration.saturday_lessons:
         if today.strftime("%A").lower() == 'tuesday':
-            schedule_files = ['rus_schedule.json', 'ukr_schedule.json']
+            schedule_files = ['../data/schedules/rus_schedule.json', '../data/schedules/ukr_schedule.json']
             for schedule_file in schedule_files:
                 with open(schedule_file, 'r', encoding='utf-8') as file:
                     data = json.load(file)
