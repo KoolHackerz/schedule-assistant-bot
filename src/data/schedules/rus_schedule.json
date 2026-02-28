@@ -1,124 +1,89 @@
 {
     "monday": [
         {
-            "time": "9:50-11:25",
-            "name": "Цифровая обработка звука и изображений - Лекция",
+            "time": "8:00-9:35",
+            "name": "Программирование ГИС - Лаб (С ВТОРОЙ НЕДЕЛИ)",
             "links": [
-                "https://us02web.zoom.us/j/87266012465?pwd=VmtrTC9kUFZTRXVhZXF1NEtod3h2dz09",
-                "Пароль: 605676"
+                "https://meet.google.com/swb-zsgb-pnh"
             ],
-            "teachers": "Бабилунга О.Ю."
+            "teachers": "Cмык С.Ю. и Трояк К.Ю."
+        },
+        {
+            "time": "9:50-11:25",
+            "name": "Программирование ГИС - Лекция",
+            "links": [
+                "https://meet.google.com/swb-zsgb-pnh"
+            ],
+            "teachers": "Cмык С.Ю."
         },
         {
             "time": "11:40-13:15",
-            "name": "Системный анализ и теория принятия решений - Лекция",
+            "name": "Управление IT-проектами - Лекция",
             "links": [
-                "https://us02web.zoom.us/j/5907519061?pwd=VlNCbzR4NlVTRFU5WXQyVms3QmptUT09",
-                "Пароль: ajj61A"
+                "https://meet.google.com/rxi-hvwb-fwc"
             ],
-            "teachers": "Болтёнков В.А."
+            "teachers": "Маникаева О.С."
         }
     ],
     "tuesday": [
         {
+            "time": "8:00-9:35",
+            "name": "Методы нечёткой логики - Лаб (С ВТОРОЙ НЕДЕЛИ)",
+            "links": [
+                "https://us04web.zoom.us/j/3235895072?pwd=Q1YyNDNsMG1mdUtXQmtqSjh0UDExdz09",
+                "Пароль: p7049f"
+            ],
+            "teachers": "Кузнецов Н.А. и Иванов А.В."
+        },
+        {
             "time": "9:50-11:25",
-            "name": "Компьютерная визуализация - Лекция",
+            "name": "Программирование ГИС - Лекция",
             "links": [
-                "https://meet.google.com/sqe-gxcu-uqm"
+                "https://us02web.zoom.us/j/87564191923?pwd=KNai2e0RKPJgjbJ1A6MapfEMwIwlMT.1",
+                "Пароль: 557271"
             ],
-            "teachers": "Бабич Н.И."
-        },
-        {
-            "time": "11:40-13:15",
-            "name": "Методы и системы ИИ - Лаб",
-            "links": [
-                "https://meet.google.com/mqx-pnwg-uty"
-            ],
-            "teachers": "Смык С.Ю. и Олейник В.Н."
-        },
-        {
-            "week_parity": false,
-            "time": "13:30-15:05",
-            "name": "Цифровая обработка звука и изображений - Лаб",
-            "links": [
-                "https://us02web.zoom.us/j/75815387400?pwd=NmlqdGZmbW5yK1BuQmFiZXB1S2lKQT09",
-                "Пароль: dvP2D"
-            ],
-            "teachers": "Николенко А.А. и Бабилунга О.Ю."
-        },
-        {
-            "week_parity": true,
-            "time": "13:30-15:05",
-            "name": "Компьютерная визуализация - Лаб",
-            "links": [
-                "https://meet.google.com/sqe-gxcu-uqm"
-            ],
-            "teachers": "Бабич Н.И. и Волков А.С."
+            "teachers": "Cмык С.Ю."
         }
     ],
     "wednesday": [
         {
             "time": "9:50-11:25",
-            "name": "Технологии защиты информации - Лекция",
+            "name": "Методы нечёткой логики - Лекция",
             "links": [
-                "https://us02web.zoom.us/j/5907519061?pwd=VlNCbzR4NlVTRFU5WXQyVms3QmptUT09",
-                "Пароль: ajj61A"
+                "https://us04web.zoom.us/j/3235895072?pwd=Q1YyNDNsMG1mdUtXQmtqSjh0UDExdz09",
+                "Пароль: p7049f"
             ],
-            "teachers": "Болтёнков В.А."
+            "teachers": "Иванов А.В."
         },
         {
             "time": "11:40-13:15",
-            "name": "Проектирование ИС - Лаб",
+            "name": "Управление IT-проектами - Лаб",
             "links": [
-                "https://us04web.zoom.us/j/2872972964?pwd=NVBhNmVVN2lNQlpqWmxHNWhOeXBFUT09"
+                "https://meet.google.com/rxi-hvwb-fwc"
             ],
-            "teachers": "Галчонков О.Н. и Баськов И.А."
+            "teachers": "Маникаева О.С. и Соловьёва Д.В."
         }
     ],
     "thursday": [
         {
             "time": "9:50-11:25",
-            "name": "Технологии защиты информации - Лаб",
+            "name": "Методы нечёткой логики - Лекция",
             "links": [
-                "https://us05web.zoom.us/j/82695530337?pwd=1thcIMYSpSgNWl3s1nTHzpftev2q6J.1",
-                "Пароль: 970fiu"
+                "https://us04web.zoom.us/j/3235895072?pwd=Q1YyNDNsMG1mdUtXQmtqSjh0UDExdz09",
+                "Пароль: p7049f"
             ],
-            "teachers": "Трояк К.Ю. и Соловьёва Д.В."
+            "teachers": "Иванов А.В."
         },
         {
             "time": "11:40-13:15",
-            "name": "Проектирование ИС - Лекция",
+            "name": "Управление IT-проектами - Лекция",
             "links": [
-                "https://us02web.zoom.us/j/83623755023?pwd=ISvz0G9uSrvqnbbYDUJIO8mXTEsIvY.1",
-                "Пароль: 346070"
+                "https://meet.google.com/rxi-hvwb-fwc"
             ],
-            "teachers": "Галчонков О.Н."
+            "teachers": "Маникаева О.С."
         }
     ],
-    "friday": [
-        {
-            "time": "9:50-11:25",
-            "name": "Методы и системы ИИ - Лекция",
-            "links": [
-                "https://us02web.zoom.us/j/88573994331?pwd=S242c0FXVjRCYzRzS3FvU3dZbENtZz09",
-                "Пароль: 779285"
-            ],
-            "teachers": "Арсирий Е.А."
-        },
-        {
-            "time": "11:40-13:15",
-            "name": "Системный анализ и теория принятия решений - Лаб",
-            "links": [
-                "https://us04web.zoom.us/j/3103342844?pwd=ZUpxUUY4Vng3NWZtcldEaGxFc0ZSUT09",
-                "Пароль: 257584"
-            ],
-            "teachers": "Гнатенко В.Ю. и Куваева В.И."
-        }
-    ],
-    "saturday": [
-        {
-            "schedule-day": 6
-        }
-    ],
+    "friday": [],
+    "saturday": [],
     "sunday": []
 }

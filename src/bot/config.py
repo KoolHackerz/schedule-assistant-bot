@@ -33,7 +33,7 @@ class Config:
         self.BUTTON_TEXTS = BUTTON_TEXTS
         
         self.FIRST_WEEK_NUMBER = 10
-        self.saturday_lessons = True
+        self.saturday_lessons = False
         self._initialized = True
 
     @classmethod
