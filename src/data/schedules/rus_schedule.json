@@ -34,26 +34,9 @@
                 "Пароль: p7049f"
             ],
             "teachers": "Кузнецов Н.А. и Иванов А.В."
-        },
-        {
-            "time": "9:50-11:25",
-            "name": "Программирование ГИС - Лекция",
-            "links": [
-                "https://meet.google.com/swb-zsgb-pnh"
-            ],
-            "teachers": "Cмык С.Ю."
         }
     ],
     "wednesday": [
-        {
-            "time": "9:50-11:25",
-            "name": "Методы нечёткой логики - Лекция",
-            "links": [
-                "https://us04web.zoom.us/j/3235895072?pwd=Q1YyNDNsMG1mdUtXQmtqSjh0UDExdz09",
-                "Пароль: p7049f"
-            ],
-            "teachers": "Иванов А.В."
-        },
         {
             "time": "11:40-13:15",
             "name": "Управление IT-проектами - Лаб",
